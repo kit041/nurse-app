@@ -80,15 +80,13 @@ st.dataframe(my_df)
 
 ### STEP 4. Streamlit Cloud で公開
 
-ここが最後の仕上げです。サーバーを立ち上げます。
+#1.  **Streamlit Community Cloud** ( [https://streamlit.io/cloud](https://streamlit.io/cloud) ) にアクセスし、GitHubアカウントでログインします。
+#2.  「New app」をクリック。
+#3.  STEP 3で作ったリポジトリ（`nurse-app`）、ブランチ（`main`）、ファイル名（`streamlit_app.py`）を選択します。
+#4.  **まだ「Deploy」を押さないでください！** 「Advanced settings」をクリックします。
+#5.  **Secrets** 欄に、STEP 1でダウンロードしたJSONの中身と、スプレッドシートのURL、パスワードを貼り付けます。以下の形式に従ってください。
 
-1.  **Streamlit Community Cloud** ( [https://streamlit.io/cloud](https://streamlit.io/cloud) ) にアクセスし、GitHubアカウントでログインします。
-2.  「New app」をクリック。
-3.  STEP 3で作ったリポジトリ（`nurse-app`）、ブランチ（`main`）、ファイル名（`streamlit_app.py`）を選択します。
-4.  **まだ「Deploy」を押さないでください！** 「Advanced settings」をクリックします。
-5.  **Secrets** 欄に、STEP 1でダウンロードしたJSONの中身と、スプレッドシートのURL、パスワードを貼り付けます。以下の形式に従ってください。
-
-```toml
+#```toml
 # Secrets 欄にコピペする内容
 
 # アプリのログインパスワード
