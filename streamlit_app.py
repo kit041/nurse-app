@@ -74,9 +74,6 @@ st.subheader("最近の記録")
 df = load_data()
 my_df = df[df["nurse_name"] == user_name].tail(5) # 最新5件
 st.dataframe(my_df)
-```
-
----
 
 ### STEP 4. Streamlit Cloud で公開
 
